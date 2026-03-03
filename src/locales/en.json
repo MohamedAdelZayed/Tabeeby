@@ -1,0 +1,403 @@
+{
+
+  "register": {
+  "title": "Create Account",
+  "name": "Full Name",
+  "email": "Email",
+  "password": "Password",
+  "registerButton": "Create Account",
+  "haveAccount": "Already have an account?",
+  "loginHere": "Login here",
+  "errors": {
+    "name": "Please enter your full name",
+    "email": "Please enter a valid email",
+    "password": "Password must be at least 6 characters",
+    "emailExists": "This email already exists",
+    "failedRegister": "Failed to create account",
+    "failedSaveUser": "Failed to save user data",
+    "fetchUserError": "Failed to fetch user data"
+  },
+  "success": {
+    "registered": "Account created successfully"
+  }
+},
+
+  "login": {
+    "title": "Login",
+    "description": "Please log in to book appointment",
+    "email": "Email",
+    "password": "Password",
+    "loginButton": "Login",
+    "createAccount": "Create a new account?",
+    "clickHere": "Click here",
+
+    "errors": {
+      "invalidEmail": "Please enter a valid email",
+      "passwordMin": "Password must be at least 6 characters",
+      "invalidCredentials": "Email or password is incorrect",
+      "fetchUserError": "Failed to fetch user data"
+    },
+
+    "success": {
+      "loginSuccess": "Login successful"
+    }
+  },
+
+  "Navbar": {
+    "home": "Home",
+    "Doctors": "Doctors",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "adminPanel": "Admin Panel",
+    "myProfile": "My Profile",
+    "myAppointments": "My Appointments",
+    "logout": "Logout",
+    "login": "Login",
+    "logout_success": "Logged out successfully. See you soon!",
+    "logout_error": "An error occurred during logout. Please try again."
+  },
+  
+  "Hero": {
+    "trusted_platform": "Trusted Healthcare Platform",
+    "book_appointment": "Book Appointment",
+    "with_trusted_doctors": "With Expert Doctors",
+    "doctors_group": "Doctors group",
+    "meet_doctors_description": "Meet our trusted, highly qualified doctors and schedule your appointment.",
+    "book_appointment_cta": "Book appointment",
+    "years_exp": "Years Exp.",
+    "locations": "Locations",
+    "satisfaction": "Satisfaction",
+    "hero_image_alt": "Doctor appointment illustration"
+  },
+  
+  "Services": {
+    "our": "Our ",
+    "medicalServices": "Medical Services",
+    "mentalHealth": {
+      "title": "Mental Health",
+      "description": "Professional psychological support for depression, anxiety, and mental health."
+    },
+    "neurology": {
+      "title": "Neurology",
+      "description": "Diagnosis and treatment of brain and nervous system disorders effectively."
+    },
+    "burnTreatment": {
+      "title": "Burn Treatment",
+      "description": "Treatment for minor and major burn injuries, including wound care."
+    },
+    "cancerCare": {
+      "title": "Cancer Care",
+      "description": "Care for patients with cancer, including diagnostics and supportive therapy."
+    },
+    "laborDelivery": {
+      "title": "Labor & Delivery",
+      "description": "Maternal care and support throughout pregnancy, childbirth, and recovery."
+    },
+    "heartVascular": {
+      "title": "Heart & Vascular",
+      "description": "Expert care for heart and blood vessels, including diagnosis and treatment."
+    }
+  },
+
+  "Profile": {
+    "uploading": "Uploading...",
+    "user": "User",
+    "userName": "User Name",
+    "activeAccount": "Active Account",
+    "saveChanges": "Save Changes",
+    "editProfile": "Edit Profile",
+    "deleteAccount": "Delete Account",
+    "contactInformation": "Contact Information",
+    "basicInformation": "Basic Information",
+    "fullName": "Full Name",
+    "enterName": "Enter your name",
+    "email": "Email",
+    "phone": "Phone",
+    "addPhone": "Add phone number",
+    "address": "Address",
+    "addAddress": "Add address",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "birthday": "Birthday",
+    "confirmDelete": "Are you sure to delete your account?",
+    "deleting": "Deleting...",
+    "yes": "Yes",
+    "no": "No",
+    "notSet": "Not set",
+    "updateFailed": "Failed to update profile",
+  "updateSuccess": "Profile updated successfully!",
+  "imageUpdated": "Profile image updated",
+  "imageUploadFailed": "Failed to upload image",
+  "accountDeleted": "Account deleted successfully!",
+  "accountDeleteFailed": "Failed to delete account",
+  "somethingWentWrong": "Something went wrong!"
+  },
+
+    "Contact": {
+    "header": "Contact Us",
+    "subHeader": "Get in touch with us, we are happy to help",
+    "office": "Our Office",
+    "officeAddress": "54709 Willms Station, Suite 350, Washington, DC 20033",
+    "visitUs": "Visit Us",
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "careers": "Careers at Tabeeby",
+    "careersDesc": "Learn more about our teams and job openings.",
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "message": "Message",
+    "messagePlaceholder": "How can we help you today?",
+    "sendMessage": "Send Message",
+    "sending": "Sending...",
+    "allFieldsRequired": "All fields are required!",
+    "messageSent": "Message sent successfully!"
+  },
+
+  "About": {
+    "header": "ABOUT US",
+    "heroText1": "Welcome to Tabeeby, your trusted partner in managing your healthcare needs conveniently and efficiently. At Tabeeby, we understand the challenges individuals face when it comes to scheduling doctor appointments and managing their health records.",
+    "heroText2": "Tabeeby is committed to excellence in healthcare technology. We continuously strive to enhance our platform, integrating the latest advancements to improve user experience and deliver superior service. Whether you're booking your first appointment or managing ongoing care, Tabeeby is here to support you every step of the way.",
+    "visionTitle": "Our Vision",
+    "visionText": "Our vision at Tabeeby is to create a seamless healthcare experience for every user. We aim to bridge the gap between patients and healthcare providers, making it easier for you to access the care you need, when you need it.",
+    "whyChoose": "WHY CHOOSE US",
+    "features": {
+      "efficiencyTitle": "Efficiency",
+      "efficiencyText": "Streamlined appointment scheduling that fits into your busy lifestyle without any hassle.",
+      "convenienceTitle": "Convenience",
+      "convenienceText": "Access to a network of trusted healthcare professionals right in your area, anytime.",
+      "personalizationTitle": "Personalization",
+      "personalizationText": "Tailored recommendations and smart reminders to help you stay on top of your health."
+    }
+  },
+
+  "Doctors": {
+    "filters": "Filters",
+    "closeFilters": "Close Filters",
+    "allSpecialties": "All Specialties",
+    "browseBySpecialties": "Browse by doctors specialties.",
+    "doctorsFound": "doctors found",
+    "available": "Available",
+    "notAvailable": "Not Available",
+    "noDoctorsFound": "No doctors found for this specialty.",
+    "specialties": {
+    "General physician": "General physician",
+    "Gynecologist": "Gynecologist",
+    "Dermatologist": "Dermatologist",
+    "Pediatricians": "Pediatricians",
+    "Neurologist": "Neurologist",
+    "Gastroenterologist": "Gastroenterologist"
+  },
+  "appointmentFee": "Appointment fee:",
+  "about": "About",
+  "experience": "Years Experience",
+  "locationLabel": "Location:",
+  "title": "Find by Speciality",
+  "description": "Browse our trusted doctors by specialty and book your appointment easily and quickly.",
+  "topTitle": "Top Doctors to Book",
+  "topDescription": "Simply browse through our extensive list of trusted doctors.",
+  "viewAll": "View All Doctors"
+  },
+
+  "BookingBanner": {
+  "titleLine1": "Book Appointment",
+  "titleLine2": "With 100+ Trusted",
+  "titleLine3": "Doctors",
+  "button": "Book Now"
+},
+
+"myAppointments": {
+    "title": "My Appointments",
+    "upcoming": "Upcoming",
+    "past": "Past",
+    "address": "Address",
+    "addressDetails": {
+    "line1": "37th Cross, Richmond",
+    "line2": "Circle, Ring Road, London"
+     },
+    "dateTime": "Date & Time :",
+    "payOnline": "Pay Online",
+    "paid": "Paid",
+    "cancelAppointment": "Cancel Appointment",
+    "noAppointments": "No {type} appointments found.",
+    "cancelConfirm": "Are you sure you want to cancel this appointment?",
+    "yes": "Yes",
+    "no": "No",
+    "cancelSuccess": "Appointment cancelled",
+    "cancelError": "Failed to cancel appointment",
+    "processing": "Verifying payment...",
+    "specialties": {
+      "General physician": "General Physician",
+      "Gynecologist": "Gynecologist",
+      "Dermatologist": "Dermatologist",
+      "Pediatricians": "Pediatrician",
+      "Neurologist": "Neurologist",
+      "Gastroenterologist": "Gastroenterologist"
+    },
+
+    "success": {
+  "appointmentCancelled": "Appointment cancelled",
+  "paymentCompleted": "Payment completed successfully!"
+},
+"errors": {
+  "cancelAppointmentFailed": "Failed to cancel appointment",
+  "paymentFailed": "Payment failed, please try again"
+}
+
+  },
+
+  "doctorProfile": {
+    "details": {
+      "location": "Location:",
+      "about": "About",
+      "appointmentFee": "Appointment fee:"
+    },
+    "currency": "$",
+    "specialtyExperience": {
+      "experience": "Experience"
+    },
+    "booking": {
+      "note": "(BookingSlots component: doctorId, doctorName, doctorImage, specialty, fees)"
+    },
+    "relatedDoctors": {
+      "title": "Related Doctors",
+      "description": "Simply browse through our extensive list of trusted doctors.",
+      "status": "Available"
+    }
+    },
+
+
+  "bookingSlots": {
+    "title": "Booking slots",
+    "availableSlots": "Available Time Slots",
+    "noAppointments": "No appointments available on this day.",
+    "bookButton": "Book an appointment",
+    "errors": {
+        "selectTime": "Please select a time!",
+        "notLoggedIn": "You must be logged in to book.",
+        "fetchUserFailed": "Failed to fetch user info",
+        "alreadyBooked": "You already booked this time.",
+        "bookedByAnother": "This time is already booked by another.",
+        "bookingFailed": "Booking failed! Try again.",
+        "somethingWrong": "Something went wrong."
+    },
+    "success": {
+        "booked": "Appointment Booked! See you soon."
+    }
+},
+
+"AdminSidebar": {
+  "dashboard": "Dashboard",
+  "allAppointments": "Appointments",
+  "addDoctor": "Add Doctor",
+  "doctors": "Doctors List"
+},
+
+"Dashboard": {
+  "stats": {
+    "doctors": "Doctors",
+    "appointments": "Appointments",
+    "patients": "Patients"
+  },
+  "latestAppointments": {
+    "title": "Latest Appointments",
+    "bookedOn": "Booked on"
+  },
+  "modal": {
+    "cancelConfirm": "Are you sure you want to cancel this appointment?",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "toast": {
+    "cancelSuccess": "Appointment cancelled",
+    "cancelError": "Failed to cancel appointment"
+  }
+},
+
+
+"Appointments": {
+  "title": "All Appointments",
+  "table": {
+    "patient": "Patient",
+    "department": "Department",
+    "age": "Age",
+    "dateTime": "Date & Time",
+    "doctor": "Doctor",
+    "fees": "Fees",
+    "years": "Years"
+  },
+  "modal": {
+    "title": "Cancel Appointment?",
+    "description": "Are you sure you want to cancel this appointment? This action cannot be undone.",
+    "yes": "Yes, Cancel",
+    "no": "No"
+  },
+  "toast": {
+    "cancelSuccess": "Appointment cancelled",
+    "cancelError": "Failed to cancel appointment"
+  },
+   "specialties": {
+      "General physician": "General Physician",
+      "Gynecologist": "Gynecologist",
+      "Dermatologist": "Dermatologist",
+      "Pediatricians": "Pediatrician",
+      "Neurologist": "Neurologist",
+      "Gastroenterologist": "Gastroenterologist"
+    }
+},
+
+"AddDoctor": {
+  "title": "Add New Doctor",
+  "photo": "Doctor Photo",
+  "labels": {
+    "name": "Full Name",
+    "specialty": "Speciality",
+    "experience": "Exp. Years",
+    "fees": "Fees",
+    "city": "City",
+    "country": "Country",
+    "about": "About Doctor"
+  },
+  "placeholders": {
+    "name": "Doctor Name",
+    "city": "Enter city",
+    "country": "Enter country",
+    "about": "Write a brief about the doctor's background..."
+  },
+  "button": "Save Doctor Data",
+  "toast": {
+    "success": "Doctor added successfully",
+    "error": "Failed to add doctor",
+    "uploadError": "Image upload failed"
+  }
+},
+
+"DoctorsList": {
+    "title": "All Doctors",
+    "description": "Manage and view all specialists",
+    "total": "Total :",
+    "loading": "Loading doctors data...",
+    "noDoctors": "No doctors available at the moment."
+  },
+  
+  "footer": {
+    "brand": {
+      "description": "Tabeeby makes it easy to find trusted, certified doctors and book appointments online — anytime, anywhere. Your health is our priority, and we’re here to connect you with the right care, hassle-free."
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "home": "Home",
+      "doctors": "Doctors",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "getInTouch": {
+      "title": "Get In Touch",
+      "phone": "+20 122 724 5823",
+      "email": "zayd0497@gmail.com"
+    },
+    "copyright": "© 2026 Mohamed Adel - All Rights Reserved."
+  }
+
+}

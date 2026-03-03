@@ -1,0 +1,406 @@
+{
+
+  "register": {
+    "title": "إنشاء حساب",
+    "name": "الاسم الكامل",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "registerButton": "إنشاء الحساب",
+    "haveAccount": "هل لديك حساب؟",
+    "loginHere": "سجل الدخول هنا",
+    "errors": {
+      "name": "الرجاء إدخال الاسم الكامل",
+      "email": "الرجاء إدخال بريد إلكتروني صالح",
+      "password": "كلمة المرور يجب أن تكون 6 أحرف على الأقل",
+      "emailExists": "هذا البريد موجود بالفعل",
+      "failedRegister": "فشل في إنشاء الحساب",
+      "failedSaveUser": "فشل في حفظ بيانات المستخدم",
+      "fetchUserError": "فشل في جلب بيانات المستخدم"
+    },
+    "success": {
+      "registered": "تم إنشاء الحساب بنجاح"
+    }
+  },
+
+  "login": {
+    "title": "تسجيل الدخول",
+    "description": "يرجى تسجيل الدخول لحجز موعد",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "loginButton": "تسجيل الدخول",
+    "createAccount": "إنشاء حساب جديد؟",
+    "clickHere": "اضغط هنا",
+
+    "errors": {
+      "invalidEmail": "يرجى إدخال بريد إلكتروني صحيح",
+      "passwordMin": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+      "invalidCredentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+      "fetchUserError": "فشل في جلب بيانات المستخدم"
+    },
+
+    "success": {
+      "loginSuccess": "تم تسجيل الدخول بنجاح"
+    }
+  },
+
+  "Navbar": {
+    "home": " الرئيسية",
+    "Doctors": "الأطباء",
+    "about": "من نحن",
+    "services": "الخدمات",
+    "contact": "اتصل بنا",
+    "adminPanel": "لوحة التحكم",
+    "myProfile": "ملفي الشخصي",
+    "myAppointments": "مواعيدي",
+    "logout": "تسجيل الخروج",
+    "login": "تسجيل الدخول",
+    "logout_success": "تم تسجيل الخروج بنجاح. نراك قريباً!",
+    "logout_error": "حدث خطأ أثناء تسجيل الخروج، حاول مرة أخرى."
+  },
+
+  
+  "Hero": {
+    "trusted_platform": "منصة رعاية صحية موثوقة",
+    "book_appointment": "احجز موعد مع",
+    "with_trusted_doctors": "نخبة الأطباء",
+    "doctors_group": "مجموعة الأطباء",
+    "meet_doctors_description": "قابل أطبائنا الموثوقين والمؤهلين واحجز موعدك.",
+    "book_appointment_cta": "احجز موعد",
+    "years_exp": "سنوات خبرة",
+    "locations": "المواقع",
+    "satisfaction": "الرضا",
+    "hero_image_alt": "صورة توضيحية لحجز المواعيد"
+  },
+
+  "Services": {
+    "our": "خدماتنا ",
+    "medicalServices": "الطبية",
+    
+    "mentalHealth": {
+      "title": "الصحة النفسية",
+      "description": "دعم نفسي احترافي للاكتئاب والقلق والصحة النفسية."
+    },
+    "neurology": {
+      "title": "الأعصاب",
+      "description": "تشخيص وعلاج اضطرابات الدماغ والجهاز العصبي بفعالية."
+    },
+    "burnTreatment": {
+      "title": "علاج الحروق",
+      "description": "علاج الإصابات الحرارية الصغيرة والكبيرة، بما في ذلك العناية بالجروح."
+    },
+    "cancerCare": {
+      "title": "رعاية السرطان",
+      "description": "رعاية المرضى المصابين بالسرطان، بما في ذلك التشخيص والدعم العلاجي."
+    },
+    "laborDelivery": {
+      "title": "الولادة",
+      "description": "رعاية ودعم الأم طوال فترة الحمل والولادة والتعافي."
+    },
+    "heartVascular": {
+      "title": "القلب والأوعية الدموية",
+      "description": "رعاية متخصصة للقلب والأوعية الدموية، بما في ذلك التشخيص والعلاج."
+    }
+  },
+
+  "Profile": {
+    "uploading": "جاري الرفع...",
+    "user": "مستخدم",
+    "userName": "اسم المستخدم",
+    "activeAccount": "الحساب نشط",
+    "saveChanges": "حفظ التغييرات",
+    "editProfile": "تعديل الملف الشخصي",
+    "deleteAccount": "حذف الحساب",
+    "contactInformation": "معلومات الاتصال",
+    "basicInformation": "المعلومات الأساسية",
+    "fullName": "الاسم الكامل",
+    "enterName": "ادخل اسمك",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "addPhone": "أضف رقم الهاتف",
+    "address": "العنوان",
+    "addAddress": "أضف العنوان",
+    "gender": "الجنس",
+    "male": "ذكر",
+    "female": "أنثى",
+    "birthday": "تاريخ الميلاد",
+    "confirmDelete": "هل أنت متأكد من حذف الحساب؟",
+    "deleting": "جاري الحذف...",
+    "yes": "نعم",
+    "no": "لا",
+    "notSet": "غير محدد",
+    "updateFailed": "فشل في تحديث الملف الشخصي",
+  "updateSuccess": "تم تحديث الملف الشخصي بنجاح!",
+  "imageUpdated": "تم تحديث صورة الملف الشخصي",
+  "imageUploadFailed": "فشل في رفع الصورة",
+  "accountDeleted": "تم حذف الحساب بنجاح!",
+  "accountDeleteFailed": "فشل في حذف الحساب",
+  "somethingWentWrong": "حدث خطأ ما!"
+  },
+
+  "Contact": {
+    "header": "اتصل بنا",
+    "subHeader": "تواصل معنا، نحن سعداء لمساعدتك",
+    "office": "مكتبنا",
+    "officeAddress": "٥٤٧٠٩ محطة ويلمز، جناح ٣٥٠، واشنطن، العاصمة ٢٠٠٣٣",
+    "visitUs": "زرنا",
+    "callUs": "اتصل بنا",
+    "emailUs": "راسلنا",
+    "careers": "الوظائف في Tabeeby",
+    "careersDesc": "تعرف على فرقنا وفرص العمل المتاحة",
+    "yourName": "اسمك",
+    "yourEmail": "بريدك الإلكتروني",
+    "message": "رسالتك",
+    "messagePlaceholder": "كيف يمكننا مساعدتك اليوم؟",
+    "sendMessage": "إرسال الرسالة",
+    "sending": "جارٍ الإرسال...",
+    "allFieldsRequired": "كل الحقول مطلوبة!",
+    "messageSent": "تم إرسال الرسالة بنجاح!"
+  },
+
+  "About": {
+    "header": "من نحن Tabeeby",
+    "heroText1": "مرحبًا بك في Tabeeby شريكك الموثوق لإدارة احتياجاتك الصحية بسهولة وكفاءة. نحن في Tabeeby ندرك التحديات التي يواجهها الأفراد عند حجز مواعيد الأطباء وإدارة سجلاتهم الصحية.",
+    "heroText2": "تلتزم Tabeeby بالتميز في تقنيات الرعاية الصحية. نسعى باستمرار لتحسين منصتنا ودمج أحدث الابتكارات لتقديم تجربة مستخدم أفضل وخدمة عالية الجودة. سواء كنت تحجز موعدك الأول أو تدير رعايتك المستمرة، فإن Tabeeby هنا لدعمك في كل خطوة.",
+    "visionTitle": "رؤيتنا",
+    "visionText": "رؤيتنا في Tabeeby هي تقديم تجربة رعاية صحية سلسة لكل مستخدم. نهدف إلى سد الفجوة بين المرضى ومقدمي الرعاية الصحية، مما يسهل عليك الوصول إلى الرعاية التي تحتاجها في الوقت المناسب.",
+    "whyChoose": "لماذا تختارنا",
+    "features": {
+      "efficiencyTitle": "الكفاءة",
+      "efficiencyText": "حجز المواعيد بشكل مبسط يتناسب مع نمط حياتك المزدحم بدون أي عناء.",
+      "convenienceTitle": "الراحة",
+      "convenienceText": "الوصول لشبكة من أخصائيي الرعاية الصحية الموثوقين في منطقتك في أي وقت.",
+      "personalizationTitle": "التخصيص",
+      "personalizationText": "توصيات مخصصة وتذكيرات ذكية لمساعدتك على متابعة صحتك باستمرار."
+    }
+  },
+
+  "Doctors": {
+  "filters": "الفلاتر",
+  "closeFilters": "إغلاق الفلاتر",
+  "allSpecialties": "كل التخصصات",
+  "browseBySpecialties": "تصفح حسب تخصص الأطباء",
+  "doctorsFound": "أطباء تم العثور عليهم",
+  "available": "متاح",
+  "notAvailable": "غير متاح",
+  "noDoctorsFound": "لا يوجد أطباء لهذا التخصص",
+  "specialties": {
+    "General physician": "الطبيب العام",
+    "Gynecologist": "أمراض النساء",
+    "Dermatologist": "أمراض الجلد",
+    "Pediatricians": "طب الأطفال",
+    "Neurologist": "أمراض الأعصاب",
+    "Gastroenterologist": "أمراض الجهاز الهضمي"
+  },
+  "appointmentFee": "سعر الكشف:",
+  "about": "عن الطبيب",
+  "experience": "سنوات خبرة",
+  "locationLabel": "الموقع:",
+  "title": "ابحث حسب التخصص",
+  "description": "تصفح أطبائنا الموثوقين حسب التخصص واحجز موعدك بسهولة وسرعة.",
+  "topTitle": "أفضل الأطباء للحجز",
+  "topDescription": "تصفح بسهولة قائمتنا الواسعة من الأطباء الموثوقين.",
+  "viewAll": "عرض جميع الأطباء"
+},
+
+"BookingBanner": {
+  "titleLine1": "احجز موعدك",
+  "titleLine2": "مع أكثر من 100 طبيب",
+  "titleLine3": "موثوق",
+  "button": "احجز الآن"
+},
+
+"myAppointments": {
+    "title": "مواعيدي",
+    "upcoming": "القادمة",
+    "past": "السابقة",
+    "address": "العنوان",
+    "addressDetails": {
+    "line1": "تقاطع 37، ريتشموند",
+    "line2": "منطقة سيركل، الطريق الدائري، لندن"
+     },
+    "dateTime": "التاريخ والوقت : ",
+    "payOnline": "الدفع أونلاين",
+    "paid": "تم الدفع",
+    "cancelAppointment": "إلغاء الموعد",
+    "noAppointments": "لا توجد مواعيد {type}.",
+    "cancelConfirm": "هل أنت متأكد من إلغاء هذا الموعد؟",
+    "yes": "نعم",
+    "no": "لا",
+    "cancelSuccess": "تم إلغاء الموعد بنجاح",
+    "cancelError": "فشل في إلغاء الموعد",
+    "processing": "جاري التحقق من عملية الدفع...",
+     "specialties": {
+      "General physician": "طبيب عام",
+      "Gynecologist": "طبيب نساء وتوليد",
+      "Dermatologist": "طبيب جلدية",
+      "Pediatricians": "طبيب أطفال",
+      "Neurologist": "طبيب أعصاب",
+      "Gastroenterologist": "طبيب جهاز هضمي"
+    },
+
+    "success": {
+  "appointmentCancelled": "تم إلغاء الموعد",
+  "paymentCompleted": "تمت عملية الدفع بنجاح!"
+},
+"errors": {
+  "cancelAppointmentFailed": "فشل في إلغاء الموعد",
+  "paymentFailed": "فشل الاتصال ببوابة الدفع، يرجى المحاولة مرة أخرى"
+}
+    
+  },
+
+   "doctorProfile": {
+    "details": {
+      "location": "الموقع:",
+      "about": "عن الطبيب",
+      "appointmentFee": "رسوم الموعد:"
+    },
+    "currency": "دولار",
+    "specialtyExperience": {
+      "experience": "سنوات الخبرة"
+    },
+    "booking": {
+      "note": "(Component BookingSlots: doctorId, doctorName, doctorImage, specialty, fees)"
+    },
+    "relatedDoctors": {
+      "title": "أطباء مشابهون",
+      "description": "تصفح ببساطة قائمتنا الكبيرة من الأطباء الموثوق بهم.",
+      "status": "متوفر"
+    
+  }
+},
+
+
+  "bookingSlots": {
+    "title": "أوقات الحجز",
+    "availableSlots": "الأوقات المتاحة",
+    "noAppointments": "لا توجد مواعيد متاحة في هذا اليوم.",
+    "bookButton": "احجز موعدًا",
+    "errors": {
+        "selectTime": "يرجى اختيار الوقت!",
+        "notLoggedIn": "يجب تسجيل الدخول للحجز.",
+        "fetchUserFailed": "فشل في جلب بيانات المستخدم",
+        "alreadyBooked": "لقد حجزت هذا الوقت مسبقًا.",
+        "bookedByAnother": "هذا الوقت محجوز لشخص آخر.",
+        "bookingFailed": "فشل الحجز! حاول مرة أخرى.",
+        "somethingWrong": "حدث خطأ ما."
+    },
+    "success": {
+        "booked": "تم حجز الموعد! نراك قريبًا."
+    }
+},
+
+
+"AdminSidebar": {
+  "dashboard": "لوحة التحكم",
+  "allAppointments": "المواعيد",
+  "addDoctor": "إضافة طبيب",
+  "doctors": "قائمة الأطباء"
+},
+
+"Dashboard": {
+  "stats": {
+    "doctors": "الأطباء",
+    "appointments": "المواعيد",
+    "patients": "المرضى"
+  },
+  "latestAppointments": {
+    "title": "أحدث المواعيد",
+    "bookedOn": "تم الحجز في"
+  },
+  "modal": {
+    "cancelConfirm": "هل أنت متأكد من إلغاء هذا الموعد؟",
+    "yes": "نعم",
+    "no": "لا"
+  },
+  "toast": {
+    "cancelSuccess": "تم إلغاء الموعد بنجاح",
+    "cancelError": "فشل في إلغاء الموعد"
+  }
+},
+
+"Appointments": {
+  "title": "كل المواعيد",
+  "table": {
+    "patient": "المريض",
+    "department": "التخصص",
+    "age": "العمر",
+    "dateTime": "التاريخ والوقت",
+    "doctor": "الطبيب",
+    "fees": "رسوم الكشف",
+    "years": "سنوات"
+  },
+  "modal": {
+    "title": "إلغاء الموعد؟",
+    "description": "هل أنت متأكد من إلغاء هذا الموعد؟ لا يمكن التراجع عن هذا الإجراء.",
+    "yes": "نعم، إلغاء",
+    "no": "تراجع"
+  },
+  "toast": {
+    "cancelSuccess": "تم إلغاء الموعد بنجاح",
+    "cancelError": "فشل في إلغاء الموعد"
+  },
+  "specialties": {
+      "General physician": "طبيب عام",
+      "Gynecologist": "طبيب نساء وتوليد",
+      "Dermatologist": "طبيب جلدية",
+      "Pediatricians": "طبيب أطفال",
+      "Neurologist": "طبيب أعصاب",
+      "Gastroenterologist": "طبيب جهاز هضمي"
+  }
+},
+
+"AddDoctor": {
+  "title": "إضافة طبيب جديد",
+  "photo": "صورة الطبيب",
+  "labels": {
+    "name": "الاسم بالكامل",
+    "specialty": "التخصص",
+    "experience": "سنوات الخبرة",
+    "fees": "سعر الكشف",
+    "city": "المدينة",
+    "country": "الدولة",
+    "about": "نبذة عن الطبيب"
+  },
+  "placeholders": {
+    "name": "اسم الطبيب",
+    "city": "أدخل المدينة",
+    "country": "أدخل الدولة",
+    "about": "اكتب نبذة مختصرة عن خلفية الطبيب..."
+  },
+  "button": "حفظ بيانات الطبيب",
+  "toast": {
+    "success": "تم إضافة الطبيب بنجاح",
+    "error": "فشل في إضافة الطبيب",
+    "uploadError": "فشل رفع الصورة"
+  }
+},
+
+"DoctorsList": {
+    "title": "جميع الأطباء",
+    "description": "إدارة وعرض جميع المتخصصين",
+    "total": "الإجمالي : ",
+    "loading": "جاري تحميل بيانات الأطباء...",
+    "noDoctors": "لا يوجد أطباء متاحون حالياً."
+  },
+
+   "footer": {
+    "brand": {
+      "description": "يسهل Tabeeby العثور على أطباء موثوقين ومعتمدين وحجز المواعيد عبر الإنترنت — في أي وقت ومن أي مكان. صحتك هي أولويتنا، ونحن هنا لنوفر لك الرعاية المناسبة بسهولة وبدون عناء."
+    },
+    "quickLinks": {
+      "title": "روابط سريعة",
+      "home": "الرئيسية",
+      "doctors": "الأطباء",
+      "about": "من نحن",
+      "contact": "تواصل معنا"
+    },
+    "getInTouch": {
+      "title": "ابقَ على اتصال",
+      "phone": "+20 122 724 5823",
+      "email": "zayd0497@gmail.com"
+    },
+    "copyright": "© 2026 محمد عادل - كل الحقوق محفوظة."
+  } 
+
+}
