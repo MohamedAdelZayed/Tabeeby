@@ -1,9 +1,11 @@
 import Stripe from "stripe";
 import { NextResponse } from "next/server";
 
-// إنشاء instance من Stripe باستخدام المفتاح السري من السيرفر
-// Stripe بيحتاجه لإنشاء Checkout Session والتواصل مع حسابك.
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
+// 1. تعريف المفتاح مع قيمة احتياطية وهمية لمنع فشل الـ Build
+const stripeSecretKey = process.env.STRIPE_SECRET_KEY || "sk_test_placeholder";
+
+// 2. إنشاء الـ instance بدون علامة التعجب "!"
+const stripe = new Stripe(stripeSecretKey);
 
 // دالة POST الخاصة بـ API route /api/checkout-session
 // أي fetch من الكومبوننت بالـ POST هينفذ الكود ده على السيرفر
