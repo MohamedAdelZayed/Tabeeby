@@ -9,16 +9,20 @@ export default function About() {
   const t = useTranslations("About");
 
   return (
-    <div className="mx-auto max-w-7xl px-6 sm:px-14 lg:px-16 pt-5">
+    <div className="mx-auto max-w-7xl px-6 sm:px-14 lg:px-16 pt-5 font-[Outfit]">
       
+
       {/* Header Section */}
-      <div className="text-center text-2xl sm:text-3xl md:text-4xl text-gray-500 dark:text-gray-400 font-light tracking-wide">
-        {t("header")}
+      <div className="text-center mb-10">
+        <h1 className="text-2xl sm:text-3xl font-light text-gray-500 dark:text-gray-400 tracking-wide uppercase">
+          {t("header").split(" ")[0]} <span className="text-gray-900 dark:text-white font-bold tracking-tight">{t("header").split(" ").slice(1).join(" ")}</span>
+        </h1>
         <div className="h-1.5 w-16 bg-[#5F6FFF] mt-3 mx-auto rounded-full"></div>
+
       </div>
 
       {/* Hero Section */}
-      <div className="my-12 px-1 flex flex-col md:flex-row gap-5 lg:gap-13 items-center md:items-stretch justify-center">
+      <div className="my12 px-1 flex flex-col md:flex-row gap-5 lg:gap-13 items-center md:items-stretch justify-center">
         
         {/* Left Side: Image */}
         <div className="w-full md:w-2/5 relative h-75 sm:h-100 md:h-auto min-h-100 rounded-2xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-800">

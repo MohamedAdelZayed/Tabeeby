@@ -299,8 +299,8 @@ if (!currentUser || loading) {
 
           <div className="relative w-full sm:w-40 aspect-square bg-blue-100 dark:bg-gray-700 rounded-xl overflow-hidden flex-shrink-0">
             <Image
-              src={item.doctor_Image}
-              alt={item.doctor_name}
+              src={item.doctor_Image || "/images/placeholder.png"} 
+              alt={item.doctor_name || "Doctor Image"}
               fill
               className="object-cover"
               sizes="(max-width: 640px) 100vw, 160px"

@@ -15,7 +15,8 @@
       "emailExists": "هذا البريد موجود بالفعل",
       "failedRegister": "فشل في إنشاء الحساب",
       "failedSaveUser": "فشل في حفظ بيانات المستخدم",
-      "fetchUserError": "فشل في جلب بيانات المستخدم"
+      "fetchUserError": "فشل في جلب بيانات المستخدم",
+      "genericError": "حدث خطأ غير متوقع، يرجى المحاولة مرة أخرى"
     },
     "success": {
       "registered": "تم إنشاء الحساب بنجاح"
@@ -154,7 +155,8 @@
     "sendMessage": "إرسال الرسالة",
     "sending": "جارٍ الإرسال...",
     "allFieldsRequired": "كل الحقول مطلوبة!",
-    "messageSent": "تم إرسال الرسالة بنجاح!"
+    "messageSent": "تم إرسال الرسالة بنجاح!",
+    "unexpectedError": "حدث خطأ غير متوقع، يرجى المحاولة "
   },
 
   "About": {

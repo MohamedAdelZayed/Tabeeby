@@ -17,10 +17,14 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
 
-    const form = e.currentTarget;
-    const name = form.name.value;
-    const email = form.email.value;
-    const message = form.message.value;
+    // الوصول للفورم وتعريف نوعه بشكل صحيح لـ TypeScript
+    const form = e.currentTarget as HTMLFormElement;
+
+    // استخدام FormData لجلب البيانات بطريقة احترافية تتجنب أخطاء النوع
+    const formData = new FormData(form);
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const message = formData.get("message") as string;
 
     if (!name || !email || !message) {
       toast.error(t("allFieldsRequired"));
@@ -28,7 +32,9 @@ export default function Contact() {
       return;
     }
 
-    const { data, error } = await supabase
+      try {
+
+    const { error } = await supabase
       .from("contacts")
       .insert([{ name, email, message }]);
 
@@ -39,7 +45,12 @@ export default function Contact() {
       form.reset();
     }
 
-    setLoading(false);
+    } catch (err) {
+    toast.error(t("unexpectedError"));
+    } finally {
+     setLoading(false);
+    }
+
   }
 
    return (

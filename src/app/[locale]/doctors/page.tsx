@@ -74,7 +74,7 @@ useEffect(() => {
   }
 
     return (
-    <div className="px-6 sm:px-16 py-6 sm:py-8 dark:bg-transparent">
+    <div className="px-6 sm:px-16 py-6 sm:py-8 dark:bg-transparent ">
 
       {/* Mobile Filter Button */}
       <div className="md:hidden mb-4">

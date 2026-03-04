@@ -12,7 +12,7 @@ export default function Hero() {
 
   return (
     // <div className="w-[90%] mx-auto  my-6">
-    <div className="w-[89.5%] mx-auto px0.5  my-6">
+    <div className="w-[89.5%] mx-auto px0.5  my-6 ">
       <div
         className="flex flex-col lg:flex-row items-center
         bg-linear-to-br from-[#5F6FFF] to-[#4757e8] 

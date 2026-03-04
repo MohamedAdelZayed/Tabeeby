@@ -9,6 +9,7 @@ import { supabase } from "../lib/supabaseClient";
 import { clearUser } from "../lib/redux/slices/userSlice";
 import { AppDispatch } from "../lib/redux/store";
 import { useDispatch } from "react-redux";
+import toast from "react-hot-toast";
 
 export default function AdminNavbar() {
   const router = useRouter();
@@ -21,9 +22,16 @@ export default function AdminNavbar() {
   const nextLocale = currentLocale === 'en' ? 'ar' : 'en';
 
   async function handleLogout() {
+    try{
     await supabase.auth.signOut();
     dispatch(clearUser());
-    router.push("/login");
+    toast.success(t("logout_success"));
+    // التوجيه للرئيسية مع الحفاظ على اللغة الحالية
+    router.push(`/${currentLocale}`);
+    
+  } catch (error) {
+    toast.error(t("logout_error"));
+  }
   }
 
   return (
@@ -40,8 +48,8 @@ export default function AdminNavbar() {
               {/* Logo */}
       <Link href="/" className="shrink-0 group">
         <Image
-          src="/images/logo.svg"
-          alt="Logo"
+          src={currentLocale === 'ar' ? "/images/logo4-ar.png" : "/images/logo (6).png"}
+          alt="Tabeeby Logo"
           width={176}
           height={40}
            className="w-32 sm:w-40 md:w-44 cursor-pointer 

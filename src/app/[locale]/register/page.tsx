@@ -83,6 +83,7 @@ export default function Register() {
 
 
   // 2. ????? ?????? ???????? ?? ???? users
+  if (authData?.user) {
   const { error } = await supabase
     .from("users")
     .insert([
@@ -102,8 +103,11 @@ export default function Register() {
     return;
   }
 
-
    toast.success(t("success.registered"));
+
+}else{
+  toast.error(t("errors.genericError"));
+}
 
 
 

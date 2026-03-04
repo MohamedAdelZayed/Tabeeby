@@ -46,7 +46,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="relative py-10 overflow-hidden ">
+    <section className="relative py-10 overflow-hidden font-[Outfit]">
       <div className="absolute top-32 -right-20 w-125 h-125 bg-[#5F6FFF]/8 dark:bg-[#5F6FFF]/10 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-32 -left-20 w-150 h-150 bg-[#5F6FFF]/6 dark:bg-[#5F6FFF]/10 rounded-full blur-3xl"></div>
       <div className="absolute inset-0 bg-[linear-gradient(rgba(95,111,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(95,111,255,0.03)_1px,transparent_1px)] bg-size-[64px_64px] mask-[radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]"></div>

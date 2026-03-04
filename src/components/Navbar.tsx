@@ -186,7 +186,7 @@ useEffect(() => {
           </li>
         ))}
 
-        {user?.role === "admin" && (
+        {/* {user?.role === "admin" && ( */}
           <li>
             <Link href="/admin/dashboard">
               <span className="relative py-1 px-2 text-sm font-medium text-white bg-[#5F6FFF] rounded-full hover:bg-[#4e5de6] dark:bg-[#4e5de6] transition-colors">
@@ -194,7 +194,7 @@ useEffect(() => {
               </span>
             </Link>
           </li>
-        )}
+        {/* )} */}
       </ul>
 
       {/* Right Section */}

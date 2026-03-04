@@ -8,7 +8,8 @@ import { useRouter } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { addAppointment, fetchAppointments } from "../lib/redux/slices/appointmentsSlice";
 import { useLocale, useTranslations } from "next-intl";
-import { RootState } from "../lib/redux/store";
+import { AppDispatch, RootState } from "../lib/redux/store";
+import { ImSpinner9 } from "react-icons/im";
 
 
 function generateNext7Days() {
@@ -50,11 +51,13 @@ export default function BookingSlots( {doctorId,doctorName,doctorImage,specialty
 
   const [timeSlots, setSlots] = useState<SlotType[]>([])
 
+  const [isBooking, setIsBooking] = useState(false);
+
   const router = useRouter()
 
    const t = useTranslations("bookingSlots");
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
 
   const locale = useLocale()
 
@@ -141,7 +144,6 @@ function calculateAge(birthday: string | null) {
 async function handleBooking(){
 
   if(!selectedTime){
-    // toast.error("Please select a time!");
     toast.error(t("errors.selectTime"));
     return;
   }
@@ -153,7 +155,9 @@ async function handleBooking(){
     return;
   }
 
+   setIsBooking(true);
 
+   try {
 
    // 🔹 جلب بيانات إضافية من جدول users
   const { data: userData, error: userError } = await supabase
@@ -201,11 +205,13 @@ async function handleBooking(){
 
     if (alreadyBookedByUser) {
       toast.error(t("errors.alreadyBooked"));
+      setIsBooking(false);
       return;
     }
 
     // لو محجوز من حد تاني
     toast.error(t("errors.bookedByAnother"));
+    setIsBooking(false);
     return;
   }
 
@@ -252,9 +258,14 @@ async function handleBooking(){
     toast.success(t("success.booked"));
     
     router.push("/my-appointments");
-  }
-}
 
+  }} catch (err: any) {
+      console.error(err);
+      toast.error(err.message || t("errors.bookingFailed"));
+      setIsBooking(false); // وقف التحميل فقط في حالة الفشل لأن النجاح بيعمل redirect
+    }
+
+  }
 
 
 
@@ -341,14 +352,35 @@ async function handleBooking(){
     )}
   </div>
 
-  <div className="mt-10 mb-10">
+  {/* <div className="mt-10 mb-10">
     <button
       onClick={() => handleBooking()}
       className="w-full sm:w-auto cursor-pointer bg-[#5F6FFF] text-white text-base font-semibold px-12 py-4 rounded-xl hover:bg-blue-700 hover:shadow-xl hover:-translate-y-1 transition-all active:scale-95 shadow-lg shadowblue-100 dark:shadow-none "
     >
       {t("bookButton")}
     </button>
-  </div>
+  </div> */}
+
+  <div className="mt-10 mb-10">
+  <button
+    disabled={isBooking}
+    onClick={() => handleBooking()}
+    className={`w-full sm:w-auto flex items-center justify-center gap-2 bg-[#5F6FFF] text-white text-base font-semibold px-12 py-4 rounded-xl transition-all shadow-lg ${
+      isBooking 
+      ? "opacity-70 cursor-not-allowed" 
+      : "cursor-pointer hover:bg-blue-700 hover:shadow-xl hover:-translate-y-1 active:scale-95"
+    }`}
+  >
+    {isBooking ? (
+      <>
+        <ImSpinner9 className="animate-spin text-xl" />
+        <span>{locale === "ar" ? "جاري الحجز..." : "Booking..."}</span>
+      </>
+    ) : (
+      t("bookButton")
+    )}
+  </button>
+</div>
 
 </div>
   );

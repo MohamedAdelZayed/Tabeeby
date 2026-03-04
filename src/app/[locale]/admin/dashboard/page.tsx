@@ -85,7 +85,6 @@ useEffect(() => {
           </div>
           <div>
             <p className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100">{doctors.length}</p>
-            {/* <p className="text-xs text-gray-400 dark:text-gray-400">Doctors</p> */}
             <p className="text-xs text-gray-400 dark:text-gray-400">{t("stats.doctors")}</p>
           </div>
         </div>
@@ -131,12 +130,15 @@ useEffect(() => {
 
               <div className="flex items-center gap-3">
                 <Image
-  src={appt.doctor_Image}
-  alt={appt.doctor_name}
+
+  src={appt.doctor_Image || "/images/userPlaceholder.png"} 
+  alt={appt.doctor_name || "Doctor"}
   width={36}
   height={36}
   className="rounded-full object-cover ring-2 ring-gray-300 dark:ring-gray-200 shadow-sm"
 />
+
+
                 <div>
                   <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
                     {appt.doctor_name}
