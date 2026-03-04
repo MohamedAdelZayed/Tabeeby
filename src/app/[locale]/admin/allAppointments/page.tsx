@@ -5,6 +5,7 @@ import { AppDispatch, RootState } from "@/src/lib/redux/store";
 import { supabase } from "@/src/lib/supabaseClient";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { HiOutlineX } from "react-icons/hi";
@@ -81,7 +82,7 @@ function formatDateTime(date: string, time: string, locale: string = "en") {
 
 
   return (
-    <div className="p-2 md:p-6 min-h-screen bg-gray-50 dark:bg-slate-900">
+    <div className="px-2 py-5  md:p-6 min-h-screen bg-gray-50 dark:bg-slate-900">
 
   <h1 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">
     {t("title")}
@@ -141,6 +142,9 @@ function formatDateTime(date: string, time: string, locale: string = "en") {
 </td>
             
             <td className="px-5 py-4">
+
+              <Link key={appt.doctor_id} href={`/${locale}/doctorProfile/${appt.doctor_id}`}>
+
               <div className="flex items-center gap-3">
                 <Image
                   src={appt.doctor_Image || "/images/userPlaceholder.png"}
@@ -151,6 +155,9 @@ function formatDateTime(date: string, time: string, locale: string = "en") {
                 />
                 <span className="text-sm font-medium  text-gray-700 dark:text-gray-200">{appt.doctor_name}</span>
               </div>
+
+              </Link>
+            
             </td>
 
             <td className="px-5 py-4 text-sm font-bold text-gray-900 dark:text-gray-100">
@@ -189,6 +196,7 @@ function formatDateTime(date: string, time: string, locale: string = "en") {
         </button>
 
         <div className="flex items-center gap-3 mb-4">
+         
           <Image
             src={appt.patient?.image || "/images/userPlaceholder.png"}
             alt="Patient"
@@ -196,6 +204,8 @@ function formatDateTime(date: string, time: string, locale: string = "en") {
             height={45}
             className="rounded-full object-cover border border-gray-100 dark:border-gray-600"
           />
+
+
           <div>
             <p className="text-base font-bold text-gray-800 dark:text-gray-100">{appt.patient?.name}</p>
             <p className="text-xs text-blue-500 dark:text-blue-300 font-bold uppercase">

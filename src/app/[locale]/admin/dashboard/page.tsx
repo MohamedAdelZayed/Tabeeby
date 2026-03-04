@@ -11,6 +11,7 @@ import { fetchAppointments, removeAppointment } from "@/src/lib/redux/slices/app
 import toast from "react-hot-toast";
 import { fetchDoctors } from "@/src/lib/redux/slices/doctorsSlice";
 import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
 
 
 export default function Dashboard() {
@@ -73,7 +74,7 @@ useEffect(() => {
 
 
   return (
-    <div className="p-2 md:p-6">
+    <div className="px-2 py-5 ">
 
       {/* Stats */}
       <div className="flex flex-wrap gap-4 mb-6">
@@ -129,6 +130,9 @@ useEffect(() => {
             <div key={appt.id} className="flex items-center justify-between px-5 py-3">
 
               <div className="flex items-center gap-3">
+              
+              <Link key={appt.doctor_id} href={`/${locale}/doctorProfile/${appt.doctor_id}`}>
+
                 <Image
 
   src={appt.doctor_Image || "/images/userPlaceholder.png"} 
@@ -137,6 +141,8 @@ useEffect(() => {
   height={36}
   className="rounded-full object-cover ring-2 ring-gray-300 dark:ring-gray-200 shadow-sm"
 />
+
+        </Link>
 
 
                 <div>

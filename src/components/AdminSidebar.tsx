@@ -39,7 +39,7 @@ export default function AdminSidebar() {
               className={`w-full flex items-center justify-center md:justify-start gap-3 px-3 md:px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ease-in-out
                 ${isActive 
                   ? "bg-[#5F6FFF] text-white shadow-sm shadow-blue-100" 
-                  : "text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-800 hover:pl-6"
+                  : "text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-slate-800 hover:pl-6"
                 }`}
               aria-current={isActive ? "page" : undefined}
             >

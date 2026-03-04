@@ -186,7 +186,6 @@ useEffect(() => {
           {filteredDoctors.length > 0 ? (
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
               {filteredDoctors.map((doctor) => (
-                // <Link key={doctor.id} href={`/doctorProfile/${doctor.id}`}>
                 <Link key={doctor.id} href={`/${locale}/doctorProfile/${doctor.id}`}>
                   <DoctorCard doctor={doctor} />
                 </Link>

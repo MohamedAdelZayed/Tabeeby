@@ -25,7 +25,7 @@ export default function DoctorsList() {
   }, [dispatch, doctors.length]);
 
   return (
-    <div className="p-3 md:p-6 bg-gray-50 dark:bg-slate-900 min-h-screen">
+    <div className="px-2 py-5 bg-gray-50 dark:bg-slate-900 min-h-screen">
 
   <div className="flex items-center justify-between mb-6">
     <div>

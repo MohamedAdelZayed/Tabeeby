@@ -120,7 +120,7 @@ export default function AddDoctor() {
   }
 
   return (
-    <div className=" p-1.5 sm:p-3 bg-gray-50 dark:bg-slate-900 min-h-screen">
+    <div className="px-2 py-5 bg-gray-50 dark:bg-slate-900 min-h-screen">
       
   <h1 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">{t("title")}</h1>
   

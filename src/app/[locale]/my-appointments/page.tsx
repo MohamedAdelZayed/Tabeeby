@@ -12,6 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useLocale, useTranslations } from "next-intl";
 import { AppointmentType } from "@/src/lib/types";
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 export default function MyAppointments() {
 
@@ -297,6 +298,8 @@ if (!currentUser || loading) {
           className="bg-white dark:bg-gray-800 relative rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 p-4 md:p-6 flex flex-col lg:flex-row gap-6 hover:shadow-md dark:hover:shadow-gray-900/40 transition-all"
         >
 
+        <Link key={item.doctor_id} href={`/${locale}/doctorProfile/${item.doctor_id}`}>
+
           <div className="relative w-full sm:w-40 aspect-square bg-blue-100 dark:bg-gray-700 rounded-xl overflow-hidden flex-shrink-0">
             <Image
               src={item.doctor_Image || "/images/placeholder.png"} 
@@ -306,6 +309,8 @@ if (!currentUser || loading) {
               sizes="(max-width: 640px) 100vw, 160px"
             />
           </div>
+        </Link>
+
 
           <div className="flex-1 space-y-1">
 

@@ -9,10 +9,14 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const locale = await requestLocale;
 
   // التأكد من أن اللغة مدعومة
-  if (!locales.includes(locale as any)) notFound();
+  // if (!locales.includes(locale as any)) notFound();
+
+  if (!locale || !locales.includes(locale as any)) {
+    notFound();
+  }
 
   return {
-    locale,
+    locale: locale,
     messages: (await import(`../locales/${locale}.json`)).default
   };
   });

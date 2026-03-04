@@ -80,9 +80,14 @@ const appointmentsSlice = createSlice({
         state.loading = true;
         state.error = null;
       })
-      .addCase(fetchAppointments.fulfilled, (state, action: PayloadAction<AppointmentType[]>) => {
-        state.loading = false;
-        state.data = action.payload;
+      // .addCase(fetchAppointments.fulfilled, (state, action: PayloadAction<AppointmentType[]>) => {
+      //   state.loading = false;
+      //   state.data = action.payload;
+      // })
+      .addCase(fetchAppointments.fulfilled, (state, action: any) => { // استخدمنا any هنا مؤقتاً لحل تعارض الـ Array/Object
+       state.loading = false;
+       state.data = action.payload;
+       state.error = null;
       })
       .addCase(fetchAppointments.rejected, (state, action) => {
         state.loading = false;
