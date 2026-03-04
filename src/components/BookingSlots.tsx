@@ -185,7 +185,7 @@ async function handleBooking(){
   // 1️⃣ نتحقق هل المعاد اتحجز قبل كده
   const { data: existingAppointments, error: checkError } = await supabase
     .from("appointments")
-    .select("id, user_id")
+    .select("id, patient_id") 
     .eq("doctor_id", doctorId)
     .eq("appointment_date", selectedFullDate)
     .eq("appointment_time", selectedTime);
@@ -197,6 +197,7 @@ async function handleBooking(){
   }
 
   if (existingAppointments && existingAppointments.length > 0) {
+
 
     // لو نفس المستخدم
     const alreadyBookedByUser = existingAppointments.some(
