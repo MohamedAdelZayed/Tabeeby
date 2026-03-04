@@ -52,6 +52,8 @@ export default function Login() {
 
     setIsLoggingIn(true);
 
+    try {
+
     // تسجيل الدخول
     const { data: res, error: authError } = await supabase.auth.signInWithPassword({
       email,
@@ -61,6 +63,7 @@ export default function Login() {
     if (authError) {
       toast.error(t("errors.invalidCredentials"));
       console.log(authError);
+      setIsLoggingIn(false);
       return;
     }
 
@@ -75,6 +78,11 @@ export default function Login() {
       toast.error(t("errors.fetchUserError"));
       setIsLoggingIn(false);
     });
+
+      } catch (err) {
+    console.error("Unexpected Error:", err);
+    setIsLoggingIn(false);
+  }
 
   }
 
