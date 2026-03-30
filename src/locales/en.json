@@ -214,6 +214,10 @@
     "upcoming": "Upcoming",
     "past": "Past",
     "address": "Address",
+
+    "completed": "Attended",
+    "expired": "Past Date",
+
     "addressDetails": {
     "line1": "37th Cross, Richmond",
     "line2": "Circle, Ring Road, London"
