@@ -41,7 +41,7 @@ export default function Services() {
     {
       title: t("heartVascular.title"),
       description: t("heartVascular.description"),
-      image: "/images/heart.png",
+      image: "/images/Heart.png",
     },
   ];
 

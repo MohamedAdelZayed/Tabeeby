@@ -70,7 +70,10 @@ export default async function RootLayout({
           <Navbar />
           <main className="grow">{children}</main>
           <Footer />
+
         </Providers>
+
+
       </body>
     </html>
   );
